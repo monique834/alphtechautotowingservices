@@ -3,92 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service | Alph Teach Auto & Towing Services </title>
-</head>
-<body>
-<a href="index.html">Home</a>
-<a href="About.html">About</a>
-<a href="Service.html">Services</a>
-<a href="Enquiry.html">Enquiry</a>
-<a href="Contact.html">Contact</a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Alph Teach Auto & Towing Services</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- Emergency Banner -->
-    <div class="emergency-banner">
-        <p>⚠️ EMERGENCY TOWING AVAILABLE 24/7 ⚠️ | Call Us Now: <strong>+27 (0) 11 123 4567</strong> | Cell/WhatsApp: <strong>082 123 4567</strong></p>
-    </div>
-
-    <!-- Header & Navigation -->
     <header>
-        <div class="logo">
-            <h1>Alph Teach Auto & Towing</h1>
-            <p>8 Years of Excellence | Est. 2016</p>
+        <div class="container header-inner">
+            <div class="brand"><a href="index.html">Alph Teach Auto & Towing</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="enquiry.html">ENQUIRY</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <!-- Page Header -->
+    <main class="container">
         <section class="page-header">
             <h1>Our Services</h1>
             <p>Professional Towing & Auto Repair in Johannesburg</p>
         </section>
 
-        <!-- Towing Services -->
+        <section class="media-grid">
+            <div class="media-card">
+                <img src="images/towing-fleet.svg" alt="Towing fleet">
+                <h3>Modern Tow Fleet</h3>
+                <p>Flatbed, wheel lift and heavy-duty tow trucks ready for every recovery job.</p>
+            </div>
+            <div class="media-card">
+                <img src="images/workshop-service.svg" alt="Workshop service">
+                <h3>Workshop Repairs</h3>
+                <p>Fully equipped workshop for engine repairs, brakes, diagnostics and maintenance.</p>
+            </div>
+            <div class="media-card">
+                <img src="images/roadside-support.svg" alt="Roadside support">
+                <h3>Roadside Support</h3>
+                <p>On-site assistance for jump starts, fuel delivery, tire changes and lockouts.</p>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>Watch Our Fleet in Action</h2>
+            <div class="video-wrapper">
+                <video class="responsive-video" controls poster="images/video-poster.svg">
+                    <source src="videos/alphteach-demo.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video. <a href="https://www.youtube.com/watch?v=ScMzIvxBSi4">Watch on YouTube</a> instead.
+                </video>
+            </div>
+            <p class="video-note">Upload your company video to <code>videos/alphteach-demo.mp4</code> for local playback, or use the YouTube link above.</p>
+        </section>
+
         <section class="service-category">
-            <h2>🚛 24/7 EMERGENCY TOWING</h2>
+            <h2>🚛 24/7 Emergency Towing</h2>
             <p>We operate a modern fleet of tow trucks ready to assist you anytime, anywhere in Johannesburg and surrounding areas.</p>
-            
             <div class="service-table">
                 <div class="service-row">
-                    <div class="service-name">FLATBED TOWING</div>
+                    <div class="service-name">Flatbed Towing</div>
                     <div class="service-desc">Ideal for luxury cars, low-clearance vehicles, and all-wheel drive cars. Your vehicle is fully lifted onto a flat platform – no damage to tires or drivetrain.</div>
                     <div class="service-price">From R500 + R25/km</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">WHEEL-LIFT TOWING</div>
+                    <div class="service-name">Wheel-Lift Towing</div>
                     <div class="service-desc">Perfect for standard vehicles. Quick and efficient for roadside pickups.</div>
                     <div class="service-price">From R400 + R20/km</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">HEAVY-DUTY TOWING</div>
+                    <div class="service-name">Heavy-Duty Towing</div>
                     <div class="service-desc">For trucks, vans, buses, and commercial vehicles.</div>
                     <div class="service-price">Call for custom quote</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">LONG-DISTANCE TOWING</div>
+                    <div class="service-name">Long-Distance Towing</div>
                     <div class="service-desc">We tow anywhere in Gauteng and beyond.</div>
-                    <div class="service-price">Call for a quote</div>
+                    <div class="service-price">Call for quote</div>
                 </div>
             </div>
             <p class="service-contact">📞 Emergency Towing: <strong>082 123 4567</strong> (24/7)</p>
         </section>
 
-        <!-- Auto Repair Services -->
         <section class="service-category">
-            <h2>🔧 COMPLETE AUTO REPAIR WORKSHOP</h2>
-            <p>Our Wemmer workshop is equipped to handle all your mechanical needs. We service all makes and models.</p>
-            
+            <h2>🔧 Auto Repair Workshop</h2>
+            <p>Our Wemmer workshop handles all makes and models with experienced technicians and genuine parts.</p>
             <div class="service-grid">
                 <div class="service-item">
-                    <h3>ENGINE REPAIR & DIAGNOSIS</h3>
+                    <h3>Engine Repair & Diagnosis</h3>
                     <ul>
                         <li>Engine diagnostics and error code scanning</li>
                         <li>Engine rebuilds and replacements</li>
@@ -97,7 +99,7 @@
                     </ul>
                 </div>
                 <div class="service-item">
-                    <h3>BRAKE SYSTEM SERVICES</h3>
+                    <h3>Brake System Services</h3>
                     <ul>
                         <li>Brake pad and shoe replacement</li>
                         <li>Brake disc and drum resurfacing</li>
@@ -106,7 +108,7 @@
                     </ul>
                 </div>
                 <div class="service-item">
-                    <h3>TRANSMISSION & CLUTCH</h3>
+                    <h3>Transmission & Clutch</h3>
                     <ul>
                         <li>Manual and automatic transmission service</li>
                         <li>Clutch replacement</li>
@@ -114,7 +116,7 @@
                     </ul>
                 </div>
                 <div class="service-item">
-                    <h3>ELECTRICAL SERVICES</h3>
+                    <h3>Electrical Services</h3>
                     <ul>
                         <li>Battery testing and replacement</li>
                         <li>Alternator and starter repair</li>
@@ -122,108 +124,85 @@
                         <li>Lighting and sensor issues</li>
                     </ul>
                 </div>
-                <div class="service-item">
-                    <h3>SUSPENSION & STEERING</h3>
-                    <ul>
-                        <li>Shock absorber replacement</li>
-                        <li>CV joint and axle repair</li>
-                        <li>Wheel alignment and balancing</li>
-                        <li>Power steering repair</li>
-                    </ul>
-                </div>
-                <div class="service-item">
-                    <h3>EXHAUST & COOLING SYSTEM</h3>
-                    <ul>
-                        <li>Exhaust leak repair</li>
-                        <li>Catalytic converter service</li>
-                        <li>Cooling system flush</li>
-                        <li>Water pump replacement</li>
-                    </ul>
-                </div>
             </div>
-            <p class="service-contact">🔧 Workshop Hours: Mon-Fri 8am-5pm | Sat 9am-2pm | 📞 Book a Repair: <strong>011 123 4567</strong></p>
+            <p class="service-contact">🔧 Workshop Booking: <strong>011 123 4567</strong></p>
         </section>
 
-        <!-- Roadside Assistance -->
         <section class="service-category">
-            <h2>🛞 24/7 ROADSIDE ASSISTANCE</h2>
-            <p>Stranded on the road? We come to you!</p>
-            
+            <h2>🛞 Roadside Assistance</h2>
+            <p>Stranded on the road? We come to you with battery jumps, tire changes, fuel delivery, and lockout help.</p>
             <div class="service-table">
                 <div class="service-row">
-                    <div class="service-name">BATTERY JUMP-START</div>
+                    <div class="service-name">Battery Jump-Start</div>
                     <div class="service-desc">Dead battery? We'll get you running again.</div>
                     <div class="service-price">From R250</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">FLAT TIRE CHANGE</div>
+                    <div class="service-name">Flat Tire Change</div>
                     <div class="service-desc">Don't have a spare or don't know how? We've got you.</div>
-                    <div class="service-price">From R200 + cost of tire (if needed)</div>
+                    <div class="service-price">From R200 + tire cost if needed</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">FUEL DELIVERY</div>
+                    <div class="service-name">Fuel Delivery</div>
                     <div class="service-desc">Ran out of fuel? We'll bring enough to get you to the nearest petrol station.</div>
                     <div class="service-price">From R250 + fuel cost</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">LOCKOUT SERVICE</div>
-                    <div class="service-desc">Locked your keys inside your car? Quick, non-destructive entry to get you back in.</div>
+                    <div class="service-name">Lockout Service</div>
+                    <div class="service-desc">Locked your keys inside your car? Quick, non-destructive entry.</div>
                     <div class="service-price">From R350</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">MINOR MECHANICAL REPAIRS</div>
-                    <div class="service-desc">On-site repairs for minor issues like belt replacements, hose repairs, and more.</div>
-                    <div class="service-price">Call for quote</div>
                 </div>
             </div>
             <p class="service-contact">📞 Roadside Assistance: <strong>082 123 4567</strong> (24/7)</p>
         </section>
 
-        <!-- Maintenance Packages -->
         <section class="service-category">
-            <h2>🛠️ MAINTENANCE PACKAGES</h2>
-            <p>Save money with our preventative maintenance plans.</p>
-            
+            <h2>🛠️ Maintenance Packages</h2>
+            <p>Prevent breakdowns with our basic, full, and major service packages.</p>
             <div class="service-table">
                 <div class="service-row">
-                    <div class="service-name">BASIC SERVICE</div>
-                    <div class="service-desc">Oil and filter change • Multi-point inspection • Fluid top-ups • Tire pressure check</div>
+                    <div class="service-name">Basic Service</div>
+                    <div class="service-desc">Oil and filter change, inspections, and fluid top-ups.</div>
                     <div class="service-price">R950</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">FULL SERVICE</div>
-                    <div class="service-desc">Everything in Basic Service plus: Spark plug replacement • Air and fuel filter replacement • Brake inspection • Wheel alignment</div>
+                    <div class="service-name">Full Service</div>
+                    <div class="service-desc">Basic service plus spark plugs, filters, and alignment checks.</div>
                     <div class="service-price">R1,850</div>
                 </div>
                 <div class="service-row">
-                    <div class="service-name">MAJOR SERVICE</div>
-                    <div class="service-desc">Everything in Full Service plus: Transmission fluid change • Coolant flush • Brake fluid flush • Full vehicle diagnostic scan</div>
+                    <div class="service-name">Major Service</div>
+                    <div class="service-desc">Full service plus transmission fluid, coolant flush, and diagnostics.</div>
                     <div class="service-price">R2,950</div>
                 </div>
             </div>
-            <p class="note">*Prices are estimates. Final quote provided after vehicle inspection.</p>
+            <p class="note">*Prices are estimates. Final quote provided after inspection.</p>
         </section>
 
-        <!-- Why Choose Our Services -->
         <section class="why-us">
             <h2>Why Choose Our Services?</h2>
             <ul>
-                <li>✓ Free quotes before any work begins</li>
-                <li>✓ Genuine and OEM parts available</li>
-                <li>✓ 3-month warranty on all repairs</li>
-                <li>✓ Fast turnaround times</li>
-                <li>✓ Clean, professional service</li>
-                <li>✓ Transparent pricing – no hidden fees</li>
+                <li>Free quotes before any work begins</li>
+                <li>Genuine parts and professional workmanship</li>
+                <li>3-month warranty on repairs</li>
+                <li>Fast turnaround and transparent pricing</li>
+                <li>24/7 emergency towing support</li>
             </ul>
         </section>
     </main>
 
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <p>📍 Commercial Park, 21 Stephenson Road, Wemmer, Johannesburg - 2001</p>
+                <p>📞 Emergency: 082 123 4567 | Office: 011 123 4567</p>
+                <p>✉️ Email: info@alphteachauto.co.za</p>
+                <p>🕐 Workshop Hours: Mon-Fri 8am-5pm | Sat 9am-2pm | Towing: 24/7</p>
+            </div>
+        </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Alph Teach Auto & Towing Services | All Rights Reserved</p>
         </div>
     </footer>
-
-</body>
-</html>
 </body>
 </html>

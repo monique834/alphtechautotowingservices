@@ -3,117 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry | Alph Teach Auto & Towing Services </title>
+    <title>Enquiry | Alph Teach Auto & Towing Services</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<a href="index.html">Home</a>
-<a href="About.html">About</a>
-<a href="Service.html">Services</a>
-<a href="Enquiry.html">Enquiry</a>
-<a href="Contact.html">Contact</a>
+    <header>
+        <div class="container header-inner">
+            <div class="brand"><a href="index.html">Alph Teach Auto & Towing</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<form action="#" method="post">
+    <main class="container">
+        <section class="page-header">
+            <h1>Send Us Your Enquiry</h1>
+            <p>Tell us what service you need and we will get back to you quickly.</p>
+        </section>
 
-    
-    <h3>Your Contact Information</h3>
-    
-    <label>Full Name *</label>
-    <input type="text" name="fullname" placeholder="e.g., John Smith" required>
-    
-    <label>Phone Number *</label>
-    <input type="tel" name="phone" placeholder="e.g., 082 123 4567" required>
-    
-    <label>Email Address</label>
-    <input type="email" name="email" placeholder="you@example.com">
-    
-    <hr>
-    
-    <h3>Service Required *</h3>
-    
-    <select name="service_type" required>
-        <option value="">-- Select Service Type --</option>
-        <option value="towing">Towing Service</option>
-        <option value="repair">Auto Repair / Workshop</option>
-        <option value="roadside">Roadside Assistance</option>
-        <option value="maintenance">Maintenance Service</option>
-        <option value="quote">General Quote Request</option>
-    </select>
-    
-    <hr>
-    
-    <h3>Vehicle Details</h3>
-    
-    <label>Vehicle Make & Model</label>
-    <input type="text" name="vehicle" placeholder="e.g., Toyota Corolla 2018">
-    
-    <label>Registration Number</label>
-    <input type="text" name="reg_number" placeholder="e.g., ABC 123 GP">
-    
-    <label>Vehicle Colour</label>
-    <input type="text" name="colour" placeholder="e.g., Silver">
-    
-    <hr>
-    
-    <h3>Location (For Towing or Roadside Assistance)</h3>
-    
-    <label>Current Location / Address</label>
-    <textarea name="location" rows="2" placeholder="Where are you currently located?"></textarea>
-    
-    <label>Destination (For Towing)</label>
-    <input type="text" name="destination" placeholder="Where do you need the vehicle taken?">
-    
-    <hr>
-    
-    <h3>Description of Issue / Service Needed</h3>
-    
-    <textarea name="description" rows="4" placeholder="Please describe what happened or what service you need..."></textarea>
-    
-    <hr>
-    
-    <h3>Emergency?</h3>
-    
-    <label>
-        <input type="checkbox" name="emergency"> 
-        This is an emergency - I need immediate assistance
-    </label>
-    
-    <hr>
-    
-    <h3>Preferred Contact Method</h3>
-    
-    <label>
-        <input type="radio" name="contact_method" value="phone" checked> Phone Call
-    </label>
-    <label>
-        <input type="radio" name="contact_method" value="whatsapp"> WhatsApp
-    </label>
-    <label>
-        <input type="radio" name="contact_method" value="email"> Email
-    </label>
-    
-    <hr>
-    
-    <h3>Preferred Contact Time</h3>
-    
-    <select name="contact_time">
-        <option value="anytime">Anytime</option>
-        <option value="morning">Morning (8am - 12pm)</option>
-        <option value="afternoon">Afternoon (12pm - 5pm)</option>
-        <option value="evening">Evening (5pm - 8pm)</option>
-    </select>
-    
-    <hr>
-    
-    <label>
-        <input type="checkbox" name="newsletter"> 
-        Send me service reminders and special offers via WhatsApp/Email
-    </label>
-    
-    <hr>
-    
-    <button type="submit">SUBMIT ENQUIRY</button>
-    <button type="reset">Clear Form</button>
-    
-</form>
+        <section class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input id="fullname" type="text" name="fullname" placeholder="e.g., John Smith" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input id="phone" type="tel" name="phone" placeholder="e.g., 082 123 4567" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="you@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="service_type">Service Required *</label>
+                    <select id="service_type" name="service_type" required>
+                        <option value="">-- Select Service Type --</option>
+                        <option value="towing">Towing Service</option>
+                        <option value="repair">Auto Repair / Workshop</option>
+                        <option value="roadside">Roadside Assistance</option>
+                        <option value="maintenance">Maintenance Service</option>
+                        <option value="quote">General Quote Request</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="vehicle">Vehicle Make & Model</label>
+                    <input id="vehicle" type="text" name="vehicle" placeholder="e.g., Toyota Corolla 2018">
+                </div>
+
+                <div class="form-group">
+                    <label for="reg_number">Registration Number</label>
+                    <input id="reg_number" type="text" name="reg_number" placeholder="e.g., ABC 123 GP">
+                </div>
+
+                <div class="form-group">
+                    <label for="colour">Vehicle Colour</label>
+                    <input id="colour" type="text" name="colour" placeholder="e.g., Silver">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Current Location / Address</label>
+                    <textarea id="location" name="location" rows="2" placeholder="Where are you currently located?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destination (For Towing)</label>
+                    <input id="destination" type="text" name="destination" placeholder="Where do you need the vehicle taken?">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description of Issue / Service Needed</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Please describe what happened or what service you need..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" name="emergency"> This is an emergency - I need immediate assistance</label>
+                </div>
+
+                <div class="form-group radio-group">
+                    <label><input type="radio" name="contact_method" value="phone" checked> Phone Call</label>
+                    <label><input type="radio" name="contact_method" value="whatsapp"> WhatsApp</label>
+                    <label><input type="radio" name="contact_method" value="email"> Email</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact_time">Preferred Contact Time</label>
+                    <select id="contact_time" name="contact_time">
+                        <option value="anytime">Anytime</option>
+                        <option value="morning">Morning (8am - 12pm)</option>
+                        <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                        <option value="evening">Evening (5pm - 8pm)</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" name="newsletter"> Send me service reminders and special offers via WhatsApp/Email</label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Submit Enquiry</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <p>📍 Commercial Park, 21 Stephenson Road, Wemmer, Johannesburg - 2001</p>
+                <p>📞 Emergency: 082 123 4567 | Office: 011 123 4567</p>
+                <p>✉️ Email: info@alphteachauto.co.za</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Alph Teach Auto & Towing Services | All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

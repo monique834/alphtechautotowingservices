@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#263238" />
+  <rect x="120" y="120" width="960" height="560" fill="#1a237e" rx="40" />
+  <text x="600" y="320" fill="#ff6f00" font-family="Arial, Helvetica, sans-serif" font-size="72" text-anchor="middle">Roadside</text>
+  <text x="600" y="420" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" text-anchor="middle">Assistance</text>
+  <text x="600" y="520" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="32" text-anchor="middle">Jump starts, fuel delivery, lockouts</text>
+</svg>

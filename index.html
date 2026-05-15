@@ -1,205 +1,124 @@
-<!-- 
-    ==================================================
-    FILE: index.html
-    AUTHOR: [Monique Anderson]
-    STUDENT ID: [ST10174046]
-    DATE:20 April 2026
-    PURPOSE: Home page for Alph Teach Auto & Towing Services
-    ==================================================
--->
-
-<<nav class="main-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Service.html">Services</a></li>
-        <li><a href="Enquiry.html">Enquiry</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-    </ul>
-</nav>
-<!-- ========================================== -->
-        <!-- MAIN NAVIGATION - Links to all 5 pages     -->
-        <!-- Using relative paths (no domain needed)    -->
-        <!-- ========================================== -->
-        <nav class="main-nav">
-            <ul>
-            </ul>
-        </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alph Teach Auto & Towing Services</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="brand"><a href="index.html">Alph Teach Auto & Towing</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
-<p>Alph Teach Auto & Towing Services:</p>
-<img src="https://media.istockphoto.com/id/2216822671/photo/close-up-of-mechanic-performing-maintenance-on-car-engine.jpg?s=612x612&w=0&k=20&c=guDC3MSqf5n800GtkivL5a0lMzTUwGQscZR9D6KPnNA=" width="450" height="333">
-<img src="https://media.istockphoto.com/id/928655958/photo/hand-using-mobile-smartphone-for-emergency-roadside-service-with-broken-car-on-tow-truck-after.jpg?s=612x612&w=0&k=20&c=c9z1nhmKo7cSNVpQTWSFfGglE0qVKiwW8cVehtxObow=" width="450" height="333">
-<img src="https://media.istockphoto.com/id/1152779124/photo/repair-service-station-with-lifted-modern-cars-being-under-maintenance-and-technicians-on.jpg?s=612x612&w=0&k=20&c=iutmq5zDiWN58Lc3B89hWNbvZCekzqJxMNXlvwr7m0c=" alt="com/id/1152779124/photo/repair-service-station-with-lifted-modern-cars-being-under-maintenance-and-technicians-on" width="450" height="333">
     <section class="hero">
-        <div class="hero-content">
-        
-            <h3>YOUR TRUSTED AUTO CARE PARTNER IN JOHANNESBURG</h3>
+        <div class="container">
+            <h1>YOUR TRUSTED AUTO CARE PARTNER IN JOHANNESBURG</h1>
             <p>8 Years of Excellence | 24/7 Emergency Towing | Professional Auto Repair</p>
             <div class="hero-buttons">
-                <a href="tel:0821234567" class="btn btn-emergency">📞 CALL NOW: 24/7 EMERGENCY TOWING</a>
-                <a href="enquiry.html" class="btn btn-quote">📝 GET A QUOTE</a>
+                <a href="tel:0821234567" class="btn">📞 CALL NOW: 24/7 EMERGENCY TOWING</a>
+                <a href="enquiry.html" class="btn btn-secondary">📝 GET A QUOTE</a>
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main>
-        <div style="border: 1px solid black">Why Choose Alph Teach Auto & Towing?</div>
-<div style="border: 1px solid black">🛞 Roadside Assistance
-Jump starts, tire changes, fuel delivery, lockout service</div>
-<div style="border: 1px solid black">🚛 24/7 Towing
-Flatbed, wheel-lift, and heavy-duty towing for all vehicle types</div>
-<div style="border: 1px solid black">🔧 Auto Repair
-Complete mechanical repairs from engine to brakes to electrical
-</div>
-<div style="border: 1px solid black">🏭 Workshop Services
-Full-service workshop at our Wemmer location</div>
+    <main class="container">
+        <section class="feature-grid">
+            <div class="feature-card">🛞 Roadside Assistance: Jump starts, tire changes, fuel delivery, lockout service</div>
+            <div class="feature-card">🚛 24/7 Towing: Flatbed, wheel-lift, and heavy-duty towing for all vehicle types</div>
+            <div class="feature-card">🔧 Auto Repair: Complete mechanical repairs from engine to brakes to electrical</div>
+            <div class="feature-card">🏭 Workshop Services: Full-service workshop at our Wemmer location</div>
+        </section>
 
-       
-
-        <!-- Call to Action Section -->
-        <section class="cta-section">
-            <h2>Need Help Right Now?</h2>
-            <p>Don't wait. Whether you're stranded on the highway or need a repair at our workshop, we're here to help.</p>
-            <div class="cta-details">
-                <p>📞 Emergency Towing: <strong>082 123 4567</strong> (24/7)</p>
-                <p>🔧 Workshop Booking: <strong>011 123 4567</strong></p>
-                <p>📍 Visit Us: <strong>21 Stephenson Road, Wemmer, Johannesburg</strong></p>
+        <section class="media-grid">
+            <div class="media-card">
+                <img src="images/emergency-towing.svg" alt="Emergency towing service">
+                <h3>Emergency Towing</h3>
+                <p>Fast response towing for breakdowns, accidents and roadside emergencies.</p>
             </div>
-            <div class="cta-buttons">
-                <a href="enquiry.html" class="btn btn-primary">🚛 REQUEST TOWING NOW</a>
-                <a href="enquiry.html" class="btn btn-secondary">🔧 BOOK A REPAIR</a>
+            <div class="media-card">
+                <img src="images/auto-repair-workshop.svg" alt="Auto repair workshop">
+                <h3>Auto Repair</h3>
+                <p>Expert workshop repairs for engines, brakes, suspension and diagnostics.</p>
+            </div>
+            <div class="media-card">
+                <img src="images/roadside-assistance.svg" alt="Roadside assistance">
+                <h3>Roadside Assistance</h3>
+                <p>Jump starts, tire changes, fuel delivery and lockout support across Johannesburg.</p>
             </div>
         </section>
-<table>
-  <tr>
-    <th>✓ 8+ Years of Trusted Service</th>
 
-  </tr>
-  <tr>
-        <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+        <section class="service-blocks">
+            <div class="service-blocks-grid">
+                <div class="service-hero-block">
+                    <h2>Need Help Right Now?</h2>
+                    <p>Don't wait. Whether you're stranded on the highway or need a repair at our workshop, we're here to help.</p>
+                    <div class="hero-buttons">
+                        <a href="enquiry.html" class="btn">🚛 REQUEST TOWING NOW</a>
+                        <a href="enquiry.html" class="btn btn-secondary">🔧 BOOK A REPAIR</a>
+                    </div>
+                </div>
+                <div class="service-info-block">
+                    <div class="contact-block-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Emergency Towing</strong>
+                            <p>082 123 4567 (24/7)</p>
+                        </div>
+                    </div>
+                    <div class="contact-block-item">
+                        <span>🔧</span>
+                        <div>
+                            <strong>Workshop Booking</strong>
+                            <p>011 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-block-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Visit Us</strong>
+                            <p>21 Stephenson Road, Wemmer, Johannesburg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+        <section class="highlights-section">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">✓ 8+ Years of Trusted Service</div>
+                <div class="highlight-card">✓ 1000+ Vehicles Towed</div>
+                <div class="highlight-card">✓ Affordable & Transparent Pricing</div>
+                <div class="highlight-card">✓ Fully Licensed & Insured</div>
+            </div>
+        </section>
+    </main>
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
-<body>
-
-     <!-- ========================================== -->
-    <!-- MAIN CONTENT - Unique to each page         -->
-    <!-- ========================================== -->
-    <main>
-
-<h2>🚛 REQUEST TOWING NOW 🔧 BOOK A REPAIR</h2>
-
-<table>
-  <tr>
-    </tr>
-  <tr>
-    <td>✓ 8+ Years of Trusted Service</td>
-    
-  </tr>
-  <tr>
-    <td>✓ 1000+ Vehicles Towed</td>
-    
-  </tr>✓ Affordable & Transparent Pricing
-  <tr>
-    <td>✓ Fully Licensed & Insured</td>
-   
-  </tr>
-  <tr>
- 
-  <tr>
-  </tr>
-</table>
-
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3><style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
-<body>
-
-<h2>Alph Teach Auto & Towing Services</h2>
-
-<table>
-  <tr>
-    </tr>
-  <tr>
-    <td>📍 Commercial Park, 21 Stephenson Road, Wemmer, Johannesburg - 2001</td>
-    
-  </tr>
-  <tr>
-    <td>📞 Emergency: 082 123 4567 | Office: 011 123 4567</td>
-    
-  </tr>
-  <tr>
-    <td>✉️ Email: info@alphteachauto.co.za</td>
-   
-  </tr>
-  <tr>
-    <td>🕐 Workshop Hours</td>
-    <td>Mon-Fri 8am-5pm</td>
-    <td>Sat 9am-2pm</td>
-    <td>Towing: 24/7 </tr>
-  <tr>
-  </tr>
-</table>
-
-
-
+        <div class="container footer-content">
+            <div>
+                <p>📍 Commercial Park, 21 Stephenson Road, Wemmer, Johannesburg - 2001</p>
+                <p>📞 Emergency: 082 123 4567 | Office: 011 123 4567</p>
+                <p>✉️ Email: info@alphteachauto.co.za</p>
+                <p>🕐 Workshop Hours: Mon-Fri 8am-5pm | Sat 9am-2pm | Towing: 24/7</p>
+            </div>
+        </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Alph Teach Auto & Towing Services | All Rights Reserved</p>
         </div>
     </footer>
-=
-    <!-- ========================================== -->
-    <!-- FOOTER SECTION - Same on ALL pages         -->
-    <!-- Contains contact info, address, copyright  -->
-    <!-- ========================================== -->
-    
-            
-            <!-- Business address block -->
-            
-            
-            <!-- Contact information block -->
-          
-            <!-- Hours of operation block -->
-            
-    </footer>
-    <!-- END footer -->
-
-<!-- END OF FILE: index.html -->
 </body>
 </html>
+
