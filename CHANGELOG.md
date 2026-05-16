@@ -19,6 +19,7 @@
 - Updated the modern tow fleet service image to `images/Screenshot_16-5-2026_211856_pixabay.com.jpeg`.
 - Updated the auto repair card image to `images/Screenshot_15-5-2026_23542_www.istockphoto.com.jpeg`.
 - Updated the workshop repairs card image to `images/Screenshot_16-5-2026_211736_pixabay.com.jpeg`.
+- Added the local service video to `service.html` using `videos/istockphoto-467034033-640_adpp_is.mp4` and removed the extra caption text.
 
 ### Fixed
 - Fixed broken HTML structure and navigation consistency across `index.html`, `service.html`, and `contact.html`.
