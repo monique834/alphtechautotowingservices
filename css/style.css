@@ -104,7 +104,7 @@ header .brand a:hover {
 /* ===== 6. HERO SECTION ===== */
 .hero {
     background-color: #263238;
-    background-image: linear-gradient(rgba(10, 25, 55, 0.65), rgba(10, 25, 55, 0.65)), url("../images/Screenshot_16-5-2026_0847_www.istockphoto.com.jpeg");
+    background-image: linear-gradient(rgba(10, 25, 55, 0.65), rgba(10, 25, 55, 0.65)), url("../images/Screenshot_16-5-2026_0814_www.istockphoto.com.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
