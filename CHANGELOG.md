@@ -1,23 +1,25 @@
 # Changelog
 
-All notable changes to this project are documented in this file.
-
-## [Unreleased] - 2026-05-15
+## [1.1.0] - 2026-05-16
 
 ### Added
-- New website-style homepage service block section for urgent help and booking actions.
-- Added professional service content sections for emergency towing, workshop repairs, roadside assistance, and maintenance packages.
-- Inserted structured highlight cards and contact action blocks on `index.html`.
+- New homepage service block and highlight card layout for urgent help and booking actions.
+- Professional `service.html` sections for emergency towing, auto repair workshop, roadside assistance, and maintenance packages.
+- Clean contact page layout with structured address, phone, and email blocks.
+- Local image assets added and homepage cards updated to use photos from `images/`.
 
 ### Changed
-- Updated `c:\Users\moniq\OneDrive\Documents\alphtechautotowingservices\contact.html` to fix malformed HTML and replace it with a clean contact page layout.
-- Restored the original emergency towing image reference in `index.html` after an undo request.
-- Updated `css/style.css` with modern block styles, responsive grid layouts, button variants, and service page card styling.
-- Improved header/navigation visibility and link styling site-wide.
+- Updated `css/style.css` with modern block styles, responsive grid layouts, button variants, service tables, and mobile stacking.
+- Improved header/navigation color contrast and site-wide link visibility.
+- Repaired malformed HTML in `contact.html`, removing duplicate document fragments and restoring proper page structure.
+- Replaced homepage image references with local photo assets for better site stability.
+- Updated the emergency towing card image to `images/Screenshot_16-5-2026_0847_www.istockphoto.com.jpeg`.
+- Updated the auto repair card image to `images/Screenshot_15-5-2026_23542_www.istockphoto.com.jpeg`.
 
 ### Fixed
-- Removed duplicate malformed HTML fragments from `contact.html`.
-- Fixed navigation consistency and ensured page sections display as clean blocks.
+- Fixed broken HTML structure and navigation consistency across `index.html`, `service.html`, and `contact.html`.
+- Corrected the contact page so it now loads as a valid HTML page with proper header, main, and footer sections.
+- Reverted unintended image changes when requested.
 
 ### Notes
-- The changelog file was created to track the current site improvements and can be expanded for future updates.
+- The changelog will continue to document future site improvements and visual updates.
