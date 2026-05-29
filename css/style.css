@@ -1,3 +1,22 @@
+/* Default styles (mobile first) */
+body {
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 /* ===== 1. CSS RESET ===== */
 * {
     margin: 0;
