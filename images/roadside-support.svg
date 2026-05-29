@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-  <rect width="1200" height="800" fill="#424242" />
-  <path d="M200 520 L400 300 L640 520" fill="#ff6f00" opacity="0.7" />
-  <circle cx="400" cy="520" r="80" fill="#ffffff" />
-  <circle cx="620" cy="520" r="80" fill="#ffffff" />
-  <text x="600" y="260" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="72" text-anchor="middle">Roadside</text>
-  <text x="600" y="360" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="44" text-anchor="middle">Support Team</text>
-</svg>
