@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Alph Teach Auto & Towing Services</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -81,8 +86,21 @@
             </form>
         </section>
 
+        <section class="map-section">
+            <h2>Our Location</h2>
+            <div id="map" style="height: 400px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></div>
+        </section>
+
     <footer>
         <p>&copy; 2026 Alph Teach Auto & Towing Services. All Rights Reserved.</p>
     </footer>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div class="lightbox-container">
+            <button class="lightbox-close" data-lightbox-close>&times;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery image">
+        </div>
+    </div>
 </body>
 </html>
