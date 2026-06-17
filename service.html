@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Alph Teach Auto & Towing Services</title>
+    <meta name="description" content="Explore Alph Teach Auto & Towing Services in Johannesburg with searchable towing, repair, and roadside assistance offerings." />
+    <meta name="keywords" content="towing, roadside assistance, auto repair, Johannesburg, vehicle recovery, workshop services" />
+    <meta name="geo.region" content="ZA-GP" />
+    <meta name="geo.placename" content="Wemmer, Johannesburg" />
+    <meta name="geo.position" content="-26.2041;28.0473" />
+    <meta name="ICBM" content="-26.2041, 28.0473" />
+    <meta property="og:title" content="Our Services | Alph Teach Auto & Towing Services" />
+    <meta property="og:description" content="Search our towing, roadside assistance, and workshop services in Johannesburg." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alphteachauto.co.za/service.html" />
+    <meta property="og:image" content="https://alphteachauto.co.za/images/Screenshot_16-5-2026_211856_pixabay.com.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,7 +43,154 @@
             <p>Professional Towing & Auto Repair in Johannesburg</p>
         </section>
 
-        <section class="media-grid">
+        <section class="service-search">
+            <div class="service-search-header">
+                <h2>Search our services</h2>
+                <p>Use the search box to filter by name, category or feature. Sort by name or price.</p>
+            </div>
+            <div class="service-search-controls">
+                <input id="serviceSearch" class="service-search-input" type="search" placeholder="Search services..." aria-label="Search services">
+                <select id="serviceSort" class="service-sort-select" aria-label="Sort services">
+                    <option value="name">Sort A–Z</option>
+                    <option value="priceAsc">Price: Low to High</option>
+                    <option value="priceDesc">Price: High to Low</option>
+                </select>
+            </div>
+                        <section id="services-container">
+    <div id="services-list" class="service-grid"></div>
+</section>
+
+<!-- Service data (could be loaded from JSON) -->
+<script>
+// Service data array
+const services = [
+    {
+        id: 1,
+        title: "Emergency Towing",
+        description: "24/7 emergency towing for all vehicle types",
+        price: "From R500",
+        category: "emergency",
+        image: "emergency-tow.jpg"
+    },
+    {
+        id: 2,
+        title: "Flatbed Towing",
+        description: "Safe flatbed towing for luxury and damaged vehicles",
+        price: "From R800",
+        category: "premium",
+        image: "flatbed-tow.jpg"
+    },
+    {
+        id: 3,
+        title: "Long Distance Towing",
+        description: "Reliable towing across South Africa",
+        price: "From R1500",
+        category: "long-distance",
+        image: "long-distance.jpg"
+    },
+    {
+        id: 4,
+        title: "Accident Recovery",
+        description: "Professional accident scene recovery and cleanup",
+        price: "From R1200",
+        category: "emergency",
+        image: "accident-recovery.jpg"
+    },
+    {
+        id: 5,
+        title: "Motorcycle Towing",
+        description: "Specialized towing for motorcycles and scooters",
+        price: "From R400",
+        category: "specialty",
+        image: "motorcycle-tow.jpg"
+    },
+    {
+        id: 6,
+        title: "Vehicle Transport",
+        description: "Safe vehicle transportation to any destination",
+        price: "From R2000",
+        category: "transport",
+        image: "vehicle-transport.jpg"
+    }
+];
+
+// Function to display services
+function displayServices(serviceArray) {
+    const container = document.getElementById('services-list');
+    if (!container) return;
+    container.innerHTML = '';
+  
+    serviceArray.forEach(service => {
+        const card = document.createElement('div');
+        card.className = 'service-card';
+        card.innerHTML = `
+            <img src="images/${service.image}" alt="${service.title}" loading="lazy">
+            <div class="service-content">
+                <span class="service-category">${service.category}</span>
+                <h3>${service.title}</h3>
+                <p>${service.description}</p>
+                <p class="service-price">${service.price}</p>
+                <button class="btn btn-submit" onclick="bookService(${service.id})">Book Now</button>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+// Load services on page load
+document.addEventListener('DOMContentLoaded', () => {
+    displayServices(services);
+});
+
+// Book service function
+function bookService(id) {
+    const service = services.find(s => s.id === id);
+    if (!service) return;
+    alert(`You've selected: ${service.title}\nPrice: ${service.price}\nWe'll contact you shortly!`);
+}
+</script>
+
+<style>
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+.service-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.service-content {
+    padding: 20px;
+}
+.service-category {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.service-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+</style>
+
+                </section>
             <div class="media-card">
                 <img src="images/Screenshot_16-5-2026_211856_pixabay.com.jpeg" alt="Tow fleet truck">
                 <h3>Modern Tow Fleet</h3>
@@ -97,21 +259,25 @@
                         <li>Overheating issues and radiator repair</li>
                     </ul>
                 </div>
-                <div class="service-item">
-                    <h3>Brake System Services</h3>
-                    <ul>
-                        <li>Brake pad and shoe replacement</li>
-                        <li>Brake disc and drum resurfacing</li>
-                        <li>Brake fluid flush</li>
-                        <li>ABS system diagnosis and repair</li>
-                    </ul>
+                <div class="media-card">
+                    <img src="images/Screenshot_16-5-2026_211856_pixabay.com.jpeg" alt="Alphtech tow fleet truck at work in Johannesburg" title="Modern tow fleet - Alphtech" width="1200" height="800" loading="lazy">
+                    <h3>Modern Tow Fleet</h3>
+                    <p>Flatbed, wheel lift and heavy-duty tow trucks ready for every recovery job.</p>
                 </div>
-                <div class="service-item">
-                    <h3>Transmission & Clutch</h3>
-                    <ul>
-                        <li>Manual and automatic transmission service</li>
-                        <li>Clutch replacement</li>
-                        <li>Transmission fluid change</li>
+                <div class="media-card">
+                    <img src="images/Screenshot_15-5-2026_23542_www.istockphoto.com.jpeg" alt="Workshop service bay with technicians" title="Workshop repairs and diagnostics" width="1200" height="800" loading="lazy">
+                    <h3>Auto Repair</h3>
+                    <p>Expert workshop repairs for engines, brakes, suspension and diagnostics.</p>
+                </div>
+                <div class="media-card">
+                    <img src="images/Screenshot_16-5-2026_0847_www.istockphoto.com.jpeg" alt="Roadside assistance tow operator helping a customer" title="Roadside assistance across Johannesburg" width="1200" height="800" loading="lazy">
+                    <h3>Roadside Assistance</h3>
+                    <p>Jump starts, tire changes, fuel delivery and lockout support across Johannesburg.</p>
+                </div>
+                <figure class="media-figure">
+                    <img src="images/flatbed-towing-luxury-car.jpg" alt="Flatbed towing a luxury vehicle safely" title="Safe flatbed towing for luxury and exotic vehicles" width="1200" height="800" loading="lazy">
+                    <figcaption>Safe flatbed towing for luxury and exotic vehicles</figcaption>
+                </figure>
                     </ul>
                 </div>
                 <div class="service-item">
@@ -125,6 +291,7 @@
                 </div>
             </div>
             <p class="service-contact">🔧 Workshop Booking: <strong>011 123 4567</strong></p>
+            <button id="bookNow" class="btn" style="margin-top: 20px;">Book Towing Service</button>
         </section>
 
         <section class="service-category">
@@ -190,6 +357,18 @@
         </section>
     </main>
 
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" data-close>&times;</button>
+            <div class="modal-header">
+                <h2>Booking Confirmed!</h2>
+            </div>
+            <div class="modal-body">
+                <p>We'll be there within 30 minutes.</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container footer-content">
             <div>
@@ -203,5 +382,13 @@
             <p>&copy; 2024 Alph Teach Auto & Towing Services | All Rights Reserved</p>
         </div>
     </footer>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div class="lightbox-container">
+            <button class="lightbox-close" data-lightbox-close>&times;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery image">
+        </div>
+    </div>
 </body>
 </html>
