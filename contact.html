@@ -61,7 +61,7 @@
         </section>
     </main>
  <section class="contact-form">
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post" data-endpoint="https://formspree.io/f/yourFormID">
                 <div class="form-group">
                     <label for="fullname">Full Name *</label>
                     <input id="fullname" type="text" name="fullname" placeholder="e.g., John Smith" required>
@@ -69,12 +69,12 @@
 
                 <div class="form-group">
                     <label for="phone">Phone Number *</label>
-                    <input id="phone" type="tel" name="phone" placeholder="e.g., 082 123 4567" required>
+                    <input id="phone" type="tel" name="phone" placeholder="e.g., 082 123 4567" required pattern="^\s*\+?[0-9\s\-()]{7,15}\s*$" title="Enter a valid phone number">
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input id="email" type="email" name="email" placeholder="you@example.com">
+                    <input id="email" type="email" name="email" placeholder="you@example.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Enter a valid email address">
                 </div>
 
                 <div class="form-group">
@@ -83,6 +83,7 @@
                 </div>
 
                 <button type="submit" class="btn">Send Message</button>
+                <p id="contactFeedback" class="form-feedback" style="margin-top:12px;display:none;color:#1b5e20;"></p>
             </form>
         </section>
 
