@@ -28,3 +28,32 @@
 
 ### Notes
 - The changelog will continue to document future site improvements and visual updates.
+
+## Changelog - Part 2 Interactive Features
+
+### 2026-06-17 - Interactive Elements Implementation
+
+#### 1. Added Interactive Map (Leaflet)
+- **Change made**: Implemented Leaflet map on contact.html showing company location
+- **File(s) affected**: contact.html, style.css (added map styling)
+- **Reason**: To meet Part 2 requirement for location-based features and improve user experience
+
+#### 2. Added FAQ Accordion (jQuery)
+- **Change made**: Created collapsible FAQ section for common towing questions
+- **File(s) affected**: contact.html, script.js (jQuery accordion initialization)
+- **Reason**: To implement interactive accordion element as required
+
+#### 3. Added Lightbox Gallery
+- **Change made**: Implemented image gallery with lightbox for fleet photos
+- **File(s) affected**: gallery.html, lightbox library included
+- **Reason**: To meet gallery/lightbox requirement
+
+#### 4. Added Form Animations
+- **Change made**: Added CSS transitions and animations to form inputs and buttons
+- **File(s) affected**: style.css
+- **Reason**: To enhance user experience with smooth interactions
+
+#### 5. Added Booking Confirmation Modal
+- **Change made**: Created modal popup that appears when booking is submitted
+- **File(s) affected**: contact.html, script.js
+- **Reason**: To implement modal interactive element as required
