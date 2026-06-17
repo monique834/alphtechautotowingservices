@@ -57,3 +57,20 @@
 - **Change made**: Created modal popup that appears when booking is submitted
 - **File(s) affected**: contact.html, script.js
 - **Reason**: To implement modal interactive element as required
+
+## Changelog - Part 3 Website & Repository Updates
+
+### 2026-06-17 - Part 3 Additions
+
+#### Added
+- Contact form and enquiry form with HTML5 validation.
+- AJAX form submission endpoint support and mailto fallback.
+- `robots.txt` and `sitemap.xml` for search engine indexing.
+- `README.md` updated with Part 3 documentation and repository guidance.
+
+#### Changed
+- Added form validation patterns for phone and email fields in `contact.html` and `enquiry.html`.
+- Updated `js/script.js` to support AJAX form submission, form validation, and fallback handling.
+
+#### Notes
+- The project now includes GitHub repository guidance: commit regularly, maintain changelog entries, and push updates to the remote repository.
