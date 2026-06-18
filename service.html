@@ -14,9 +14,12 @@
     <meta property="og:description" content="Search our towing, roadside assistance, and workshop services in Johannesburg." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://alphteachauto.co.za/service.html" />
-    <meta property="og:image" content="https://alphteachauto.co.za/images/Screenshot_16-5-2026_211856_pixabay.com.jpeg" />
+    <meta property="og:image" content="images/Screenshot_16-5-2026_0814_www.istockphoto.com.jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/script.js" defer></script>
@@ -56,157 +59,80 @@
                     <option value="priceDesc">Price: High to Low</option>
                 </select>
             </div>
-                        <section id="services-container">
-    <div id="services-list" class="service-grid"></div>
-</section>
-
-<!-- Service data (could be loaded from JSON) -->
-<script>
-// Service data array
-const services = [
-    {
-        id: 1,
-        title: "Emergency Towing",
-        description: "24/7 emergency towing for all vehicle types",
-        price: "From R500",
-        category: "emergency",
-        image: "emergency-tow.jpg"
-    },
-    {
-        id: 2,
-        title: "Flatbed Towing",
-        description: "Safe flatbed towing for luxury and damaged vehicles",
-        price: "From R800",
-        category: "premium",
-        image: "flatbed-tow.jpg"
-    },
-    {
-        id: 3,
-        title: "Long Distance Towing",
-        description: "Reliable towing across South Africa",
-        price: "From R1500",
-        category: "long-distance",
-        image: "long-distance.jpg"
-    },
-    {
-        id: 4,
-        title: "Accident Recovery",
-        description: "Professional accident scene recovery and cleanup",
-        price: "From R1200",
-        category: "emergency",
-        image: "accident-recovery.jpg"
-    },
-    {
-        id: 5,
-        title: "Motorcycle Towing",
-        description: "Specialized towing for motorcycles and scooters",
-        price: "From R400",
-        category: "specialty",
-        image: "motorcycle-tow.jpg"
-    },
-    {
-        id: 6,
-        title: "Vehicle Transport",
-        description: "Safe vehicle transportation to any destination",
-        price: "From R2000",
-        category: "transport",
-        image: "vehicle-transport.jpg"
-    }
-];
-
-// Function to display services
-function displayServices(serviceArray) {
-    const container = document.getElementById('services-list');
-    if (!container) return;
-    container.innerHTML = '';
-  
-    serviceArray.forEach(service => {
-        const card = document.createElement('div');
-        card.className = 'service-card';
-        card.innerHTML = `
-            <img src="images/${service.image}" alt="${service.title}" loading="lazy">
-            <div class="service-content">
-                <span class="service-category">${service.category}</span>
-                <h3>${service.title}</h3>
-                <p>${service.description}</p>
-                <p class="service-price">${service.price}</p>
-                <button class="btn btn-submit" onclick="bookService(${service.id})">Book Now</button>
-            </div>
-        `;
-        container.appendChild(card);
-    });
-}
-
-// Load services on page load
-document.addEventListener('DOMContentLoaded', () => {
-    displayServices(services);
-});
-
-// Book service function
-function bookService(id) {
-    const service = services.find(s => s.id === id);
-    if (!service) return;
-    alert(`You've selected: ${service.title}\nPrice: ${service.price}\nWe'll contact you shortly!`);
-}
-</script>
-
-<style>
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 20px;
-}
-.service-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-.service-card:hover {
-    transform: translateY(-5px);
-}
-.service-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.service-content {
-    padding: 20px;
-}
-.service-category {
-    background: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-.service-price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #28a745;
-}
-</style>
-
-                </section>
-            <div class="media-card">
-                <img src="images/Screenshot_16-5-2026_211856_pixabay.com.jpeg" alt="Tow fleet truck">
-                <h3>Modern Tow Fleet</h3>
-                <p>Flatbed, wheel lift and heavy-duty tow trucks ready for every recovery job.</p>
-            </div>
-            <div class="media-card">
-                <img src="images/Screenshot_16-5-2026_211736_pixabay.com.jpeg" alt="Workshop service">
-                <h3>Workshop Repairs</h3>
-                <p>Fully equipped workshop for engine repairs, brakes, diagnostics and maintenance.</p>
-            </div>
-            <div class="media-card">
-                <img src="images/Screenshot_16-5-2026_215835_unsplash.com.jpeg" alt="Roadside support">
-                <h3>Roadside Support</h3>
-                <p>On-site assistance for jump starts, fuel delivery, tire changes and lockouts.</p>
+            <div id="services-container">
+                <div id="services-list" class="service-grid"></div>
             </div>
         </section>
+
+        <script>
+        const services = [
+            { id: 1, title: 'Emergency Towing', description: '24/7 emergency towing for all vehicle types', price: 'From R500', category: 'Emergency', image: 'https://images.unsplash.com/photo-1673187139211-1e7ec3dd60ec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QWNjaWRlbnQlMjBSZWNvdmVyeXxlbnwwfHwwfHx8MA%3D%3D' },
+            { id: 2, title: 'Flatbed Towing', description: 'Safe flatbed towing for luxury and damaged vehicles', price: 'From R800', category: 'Flatbed', image: 'https://plus.unsplash.com/premium_photo-1661964084829-69f889505c00?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RmxhdGJlZCUyMFRvd2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
+            { id: 3, title: 'Long Distance Towing', description: 'Reliable towing across South Africa', price: 'From R1500', category: 'Long Distance', image: 'https://images.unsplash.com/photo-1780746658231-a62748dad43b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fExvbmclMjBEaXN0YW5jZSUyMFRvd2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
+            { id: 4, title: 'Accident Recovery', description: 'Professional accident scene recovery and cleanup', price: 'From R1200', category: 'Recovery', image: 'https://images.unsplash.com/photo-1698705444507-fdd098e2eafd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QWNjaWRlbnQlMjBSZWNvdmVyeXxlbnwwfHwwfHx8MA%3D%3D' },
+            { id: 5, title: 'Motorcycle Towing', description: 'Specialized towing for motorcycles and scooters', price: 'From R400', category: 'Motorcycle', image: 'https://media.istockphoto.com/id/184085457/photo/dirt-bikes.jpg?s=612x612&w=0&k=20&c=Z2WOUt18y26MqhJptcQrFYA38qowrKSExQOYv0uc5_o=' },
+            { id: 6, title: 'Vehicle Transport', description: 'Safe vehicle transportation to any destination', price: 'From R2000', category: 'Transport', image: 'https://images.unsplash.com/photo-1761917904658-2a9ecb84a169?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8VmVoaWNsZSUyMFRyYW5zcG9ydHxlbnwwfHwwfHx8MA%3D%3D' },
+
+            /* Roadside Assistance entries (from service table) */
+            { id: 7, title: 'Battery Jump-Start', description: "Dead battery? We'll get you running again.", price: 'From R250', category: 'Roadside', image: 'images/Screenshot_16-5-2026_0847_www.istockphoto.com.jpeg' },
+            { id: 8, title: 'Flat Tire Change', description: "Don't have a spare or don't know how? We've got you.", price: 'From R200 + tire cost if needed', category: 'Roadside', image: 'images/Screenshot_16-5-2026_0814_www.istockphoto.com.jpeg' },
+            { id: 9, title: 'Fuel Delivery', description: "Ran out of fuel? We'll bring enough to get you to the nearest petrol station.", price: 'From R250 + fuel cost', category: 'Roadside', image: 'images/Screenshot_16-5-2026_215835_unsplash.com.jpeg' },
+            { id: 10, title: 'Lockout Service', description: "Locked your keys inside your car? Quick, non-destructive entry.", price: 'From R350', category: 'Roadside', image: 'images/Screenshot_15-5-2026_23542_www.istockphoto.com.jpeg' },
+
+            /* Maintenance package entries */
+            { id: 11, title: 'Basic Service', description: 'Oil and filter change, inspections, and fluid top-ups.', price: 'R950', category: 'Maintenance', image: 'images/Screenshot_16-5-2026_211736_pixabay.com.jpeg' },
+            { id: 12, title: 'Full Service', description: 'Basic service plus spark plugs, filters, and alignment checks.', price: 'R1,850', category: 'Maintenance', image: 'images/Screenshot_16-5-2026_211736_pixabay.com.jpeg' },
+            { id: 13, title: 'Major Service', description: 'Full service plus transmission fluid, coolant flush, and diagnostics.', price: 'R2,950', category: 'Maintenance', image: 'images/Screenshot_16-5-2026_0814_www.istockphoto.com.jpeg' }
+        ];
+
+        function displayServices(serviceArray) {
+            const container = document.getElementById('services-list');
+            if (!container) return;
+            container.innerHTML = '';
+            serviceArray.forEach(service => {
+                const imageSrc = service.image.match(/^https?:\/\//i) ? service.image : `images/${service.image}`;
+                const card = document.createElement('div');
+                card.className = 'service-card';
+                card.innerHTML = `
+                    <img src="${imageSrc}" alt="${service.title}" loading="lazy">
+                    <div class="service-content">
+                        <span class="service-category">${service.category}</span>
+                        <h3>${service.title}</h3>
+                        <p>${service.description}</p>
+                        <p class="service-price">${service.price}</p>
+                        <button class="btn btn-submit" onclick="bookService(${service.id})">Book Now</button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            displayServices(services);
+            document.getElementById('serviceSearch').addEventListener('input', filterAndSortServices);
+            document.getElementById('serviceSort').addEventListener('change', filterAndSortServices);
+        });
+
+        function bookService(id) {
+            const service = services.find(s => s.id === id);
+            if (!service) return;
+            alert(`You've selected: ${service.title}\nPrice: ${service.price}\nWe'll contact you shortly!`);
+        }
+
+        function filterAndSortServices() {
+            const term = document.getElementById('serviceSearch').value.toLowerCase().trim();
+            const sort = document.getElementById('serviceSort').value;
+            let results = services.filter(item => item.title.toLowerCase().includes(term) || item.category.toLowerCase().includes(term) || item.description.toLowerCase().includes(term));
+            if (sort === 'priceAsc') {
+                results.sort((a, b) => parseInt(a.price.replace(/\D/g, '')) - parseInt(b.price.replace(/\D/g, '')));
+            } else if (sort === 'priceDesc') {
+                results.sort((a, b) => parseInt(b.price.replace(/\D/g, '')) - parseInt(a.price.replace(/\D/g, '')));
+            } else {
+                results.sort((a, b) => a.title.localeCompare(b.title));
+            }
+            displayServices(results);
+        }
+        </script>
 
         <section class="video-section">
             <h2>Watch Our Fleet in Action</h2>
@@ -216,145 +142,51 @@ function bookService(id) {
                     Your browser does not support HTML5 video.
                 </video>
             </div>
+
         </section>
 
-        <section class="service-category">
-            <h2>🚛 24/7 Emergency Towing</h2>
-            <p>We operate a modern fleet of tow trucks ready to assist you anytime, anywhere in Johannesburg and surrounding areas.</p>
-            <div class="service-table">
-                <div class="service-row">
-                    <div class="service-name">Flatbed Towing</div>
-                    <div class="service-desc">Ideal for luxury cars, low-clearance vehicles, and all-wheel drive cars. Your vehicle is fully lifted onto a flat platform – no damage to tires or drivetrain.</div>
-                    <div class="service-price">From R500 + R25/km</div>
+        <div class="service-blocks-grid container">
+            <section class="service-category card service-hero-block">
+                <h2>🔧 Auto Repair Workshop</h2>
+                <p>Our Wemmer workshop handles all makes and models with experienced technicians and genuine parts.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Engine Repair & Diagnosis</h3>
+                        <ul>
+                            <li>Engine diagnostics and error code scanning</li>
+                            <li>Engine rebuilds and replacements</li>
+                            <li>Timing belt and chain replacement</li>
+                            <li>Overheating issues and radiator repair</li>
+                        </ul>
+                    </div>
+                    <div class="service-item">
+                        <h3>Electrical Services</h3>
+                        <ul>
+                            <li>Battery testing and replacement</li>
+                            <li>Alternator and starter repair</li>
+                            <li>Wiring and fuse box diagnostics</li>
+                            <li>Lighting and sensor issues</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-row">
-                    <div class="service-name">Wheel-Lift Towing</div>
-                    <div class="service-desc">Perfect for standard vehicles. Quick and efficient for roadside pickups.</div>
-                    <div class="service-price">From R400 + R20/km</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">Heavy-Duty Towing</div>
-                    <div class="service-desc">For trucks, vans, buses, and commercial vehicles.</div>
-                    <div class="service-price">Call for custom quote</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">Long-Distance Towing</div>
-                    <div class="service-desc">We tow anywhere in Gauteng and beyond.</div>
-                    <div class="service-price">Call for quote</div>
-                </div>
-            </div>
-            <p class="service-contact">📞 Emergency Towing: <strong>082 123 4567</strong> (24/7)</p>
-        </section>
 
-        <section class="service-category">
-            <h2>🔧 Auto Repair Workshop</h2>
-            <p>Our Wemmer workshop handles all makes and models with experienced technicians and genuine parts.</p>
-            <div class="service-grid">
-                <div class="service-item">
-                    <h3>Engine Repair & Diagnosis</h3>
-                    <ul>
-                        <li>Engine diagnostics and error code scanning</li>
-                        <li>Engine rebuilds and replacements</li>
-                        <li>Timing belt and chain replacement</li>
-                        <li>Overheating issues and radiator repair</li>
-                    </ul>
+                <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;align-items:center;">
+                    <p class="service-contact" style="margin:0;">🔧 Workshop Booking: <strong>011 123 4567</strong></p>
+                    <button id="bookNow" class="btn" style="margin-left:auto;">Book Towing Service</button>
                 </div>
-                <div class="media-card">
-                    <img src="images/Screenshot_16-5-2026_211856_pixabay.com.jpeg" alt="Alphtech tow fleet truck at work in Johannesburg" title="Modern tow fleet - Alphtech" width="1200" height="800" loading="lazy">
-                    <h3>Modern Tow Fleet</h3>
-                    <p>Flatbed, wheel lift and heavy-duty tow trucks ready for every recovery job.</p>
-                </div>
-                <div class="media-card">
-                    <img src="images/Screenshot_15-5-2026_23542_www.istockphoto.com.jpeg" alt="Workshop service bay with technicians" title="Workshop repairs and diagnostics" width="1200" height="800" loading="lazy">
-                    <h3>Auto Repair</h3>
-                    <p>Expert workshop repairs for engines, brakes, suspension and diagnostics.</p>
-                </div>
-                <div class="media-card">
-                    <img src="images/Screenshot_16-5-2026_0847_www.istockphoto.com.jpeg" alt="Roadside assistance tow operator helping a customer" title="Roadside assistance across Johannesburg" width="1200" height="800" loading="lazy">
-                    <h3>Roadside Assistance</h3>
-                    <p>Jump starts, tire changes, fuel delivery and lockout support across Johannesburg.</p>
-                </div>
-                <figure class="media-figure">
-                    <img src="images/flatbed-towing-luxury-car.jpg" alt="Flatbed towing a luxury vehicle safely" title="Safe flatbed towing for luxury and exotic vehicles" width="1200" height="800" loading="lazy">
-                    <figcaption>Safe flatbed towing for luxury and exotic vehicles</figcaption>
-                </figure>
-                    </ul>
-                </div>
-                <div class="service-item">
-                    <h3>Electrical Services</h3>
-                    <ul>
-                        <li>Battery testing and replacement</li>
-                        <li>Alternator and starter repair</li>
-                        <li>Wiring and fuse box diagnostics</li>
-                        <li>Lighting and sensor issues</li>
-                    </ul>
-                </div>
-            </div>
-            <p class="service-contact">🔧 Workshop Booking: <strong>011 123 4567</strong></p>
-            <button id="bookNow" class="btn" style="margin-top: 20px;">Book Towing Service</button>
-        </section>
+            </section>
 
-        <section class="service-category">
-            <h2>🛞 Roadside Assistance</h2>
-            <p>Stranded on the road? We come to you with battery jumps, tire changes, fuel delivery, and lockout help.</p>
-            <div class="service-table">
-                <div class="service-row">
-                    <div class="service-name">Battery Jump-Start</div>
-                    <div class="service-desc">Dead battery? We'll get you running again.</div>
-                    <div class="service-price">From R250</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">Flat Tire Change</div>
-                    <div class="service-desc">Don't have a spare or don't know how? We've got you.</div>
-                    <div class="service-price">From R200 + tire cost if needed</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">Fuel Delivery</div>
-                    <div class="service-desc">Ran out of fuel? We'll bring enough to get you to the nearest petrol station.</div>
-                    <div class="service-price">From R250 + fuel cost</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">Lockout Service</div>
-                    <div class="service-desc">Locked your keys inside your car? Quick, non-destructive entry.</div>
-                    <div class="service-price">From R350</div>
-                </div>
-            </div>
-            <p class="service-contact">📞 Roadside Assistance: <strong>082 123 4567</strong> (24/7)</p>
-        </section>
-
-        <section class="service-category">
-            <h2>🛠️ Maintenance Packages</h2>
-            <p>Prevent breakdowns with our basic, full, and major service packages.</p>
-            <div class="service-table">
-                <div class="service-row">
-                    <div class="service-name">Basic Service</div>
-                    <div class="service-desc">Oil and filter change, inspections, and fluid top-ups.</div>
-                    <div class="service-price">R950</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">Full Service</div>
-                    <div class="service-desc">Basic service plus spark plugs, filters, and alignment checks.</div>
-                    <div class="service-price">R1,850</div>
-                </div>
-                <div class="service-row">
-                    <div class="service-name">Major Service</div>
-                    <div class="service-desc">Full service plus transmission fluid, coolant flush, and diagnostics.</div>
-                    <div class="service-price">R2,950</div>
-                </div>
-            </div>
-            <p class="note">*Prices are estimates. Final quote provided after inspection.</p>
-        </section>
-
-        <section class="why-us">
-            <h2>Why Choose Our Services?</h2>
-            <ul>
-                <li>Free quotes before any work begins</li>
-                <li>Genuine parts and professional workmanship</li>
-                <li>3-month warranty on repairs</li>
-                <li>Fast turnaround and transparent pricing</li>
-                <li>24/7 emergency towing support</li>
-            </ul>
-        </section>
+            <aside class="service-info-block card">
+                <h2>Why Choose Our Services?</h2>
+                <ul>
+                    <li>Free quotes before any work begins</li>
+                    <li>Genuine parts and professional workmanship</li>
+                    <li>3-month warranty on repairs</li>
+                    <li>Fast turnaround and transparent pricing</li>
+                    <li>24/7 emergency towing support</li>
+                </ul>
+            </aside>
+        </div>
     </main>
 
     <div id="bookingModal" class="modal-overlay">
