@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://alphteachauto.co.za/sitemap.xml
-Host: https://alphteachauto.co.za
+
+Sitemap: https://monique834.github.io/alphteachauto/sitemap.xml
