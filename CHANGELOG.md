@@ -74,3 +74,22 @@
 
 #### Notes
 - The project now includes GitHub repository guidance: commit regularly, maintain changelog entries, and push updates to the remote repository.
+
+## [1.2.0] - 2026-06-18
+
+### Added
+- Searchable service renderer and controls in `service.html` (search box + sort select).
+- New service data entries added to the in-page `services` array: Roadside Assistance items and Maintenance packages.
+
+### Changed
+- Moved the inline `service` rendering script higher in `service.html` so the search controls and renderer are grouped together.
+- Updated `css/style.css` with `service-table`, `service-row` and `service-blocks-grid` styles to make service tables and blocks match card appearance.
+- Reorganized the Auto Repair Workshop and 'Why Choose Our Services' sections into a two-column card layout for a more professional presentation.
+- Replaced one media card (blurred face image) by removing it from the `media-grid` for privacy/visual reasons.
+
+### Fixed
+- Corrected malformed HTML near the workshop section (missing closing tag) and cleaned up related layout markup.
+
+### Notes
+- Service images support both local `images/` paths and remote `https://` URLs. The renderer detects full URLs automatically.
+- Verify image filenames in `images/` if deploying; some services reference local screenshots added to the repository.
