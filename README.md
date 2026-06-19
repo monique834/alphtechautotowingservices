@@ -23,6 +23,28 @@ This repository contains a static multi-page website for Alph Teach Auto & Towin
 - AJAX form submit support with mailto fallback.
 - SEO-friendly metadata, local image optimization, and schema-ready structure.
 
+## Recent Changes (2026-06-18)
+
+- Added an in-page searchable services renderer on `service.html` with a search box and sort control. Services are defined in the `services` JavaScript array inside `service.html`.
+- Added Roadside Assistance and Maintenance package entries to the services data so those rows are searchable and rendered as cards.
+- Grouped related sections (Workshop + Why choose us) into a polished two-column card layout and improved `service-table` visual styling via `css/style.css`.
+- Removed one media card that contained a blurred-face image for privacy/visual consistency.
+
+## Editing Services
+
+To add or update a service shown on the Services page, edit the `services` array inside `service.html` near the top of the page. Each entry follows this format:
+
+```js
+{ id: 14, title: 'Example Service', description: 'Short description', price: 'From Rxxx', category: 'Category', image: 'images/example.jpg' }
+```
+
+- Use local images placed in the `images/` folder or external URLs (starting with `https://`). The renderer automatically detects full URLs and uses them directly.
+- Keep `id` values unique and update the `price` string as needed. The sort control uses numeric parsing of digits in the `price` string for price sorting.
+
+## Previewing Locally
+
+Open `service.html` in a browser (or use Live Server) to preview the searchable services and layout changes. No build step is required.
+
 ## Repository Guidance
 
 - Commit changes regularly with descriptive messages.
