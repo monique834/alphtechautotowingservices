@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://monique834.github.io/alphteachauto/sitemap.xml
