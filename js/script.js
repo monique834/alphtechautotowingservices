@@ -247,4 +247,4 @@ $(document).ready(function() {
     $('#serviceSearch').on('input', filterAndSortServices);
     $('#serviceSort').on('change', filterAndSortServices);
     renderServiceResults(serviceData);
-});
+})
